@@ -9,7 +9,7 @@
 
         <?php 
 
-        $blacklist = array(".", '..', '.git', '.gitattributes', '.gitignore', 'index.php', 'public');
+        $blacklist = array(".", '..', '.git', '.gitattributes', '.gitignore', 'index.php', 'public', 'README.md');
 
         if ($handle = opendir('.')) {
 
