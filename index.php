@@ -9,11 +9,13 @@
 
         <?php 
 
+        $blacklist = array(".", '..', '.git', '.gitattributes', '.gitignore', 'index.php', 'public');
+
         if ($handle = opendir('.')) {
 
             while (false !== ($entry = readdir($handle))) {
 
-                if ($entry != "." && $entry != ".." && $entry != "index.php" && $entry != "public") {
+                if (!in_array($entry, $blacklist)) {
 
                     echo "<li><a href=\"$entry\">$entry</a></li>";
                 }
