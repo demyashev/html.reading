@@ -233,6 +233,87 @@
             </div>
             <!-- /download-button -->
 
+            <!-- author -->
+            <div class="user shadow">
+                <div class="photo">
+                    <img src="public/files/users/7.jpg" alt="">
+                </div>
+                <div class="social">
+                    <a href="#">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="clearfix">
+                    <h4>Alexander Demyashev</h4>
+                    <a href="#" class="button dark round">View profile</a>
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores laboriosam minus sunt debitis.</p>
+                </div>
+            </div>
+            <!-- /author -->
+
+            <!-- about product -->
+            <div class="accordion shadow active">
+                <div class="title">
+                    Description about product
+                    <i class="fa fa-minus"></i>
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="body">
+                    <div class="text">
+                        <img src="public/files/books/10.jpg" alt="" class="pull-right">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum maiores omnis tempore ipsum fugit praesentium magni error consequatur rerum at, doloribus dolorem nobis temporibus neque. Soluta, architecto pariatur recusandae exercitationem!</p>
+                        <ul>
+                            <li>Pay via E-reading</li>
+                            <li>Read offline on any device</li>
+                            <li>Proin gradiva nibh vel velit auctor</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, cupiditate quos, minus voluptatibus eius non hic nisi id nobis optio maiores porro corrupti amet possimus expedita quae ea veniam ducimus.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /about product -->
+
+            <!-- product details -->
+            <div class="accordion shadow">
+                <div class="title">
+                    <span>Product Details</span>
+                    <i class="fa fa-minus"></i>
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="body"></div>
+            </div>
+            <!-- /product details -->
+
+            <!-- tags -->
+            <div class="accordion shadow active">
+                <div class="title">
+                    <span>Product Tags</span>
+                    <i class="fa fa-minus"></i>
+                    <i class="fa fa-plus"></i>
+                </div>
+                <div class="body">
+                    <div class="text">
+                        <p>
+                            <a href="#" class="tag-link">book</a>,
+                            <a href="#" class="tag-link">social</a>,
+                            <a href="#" class="tag-link">low price</a>,
+                            <a href="#" class="tag-link">accordion</a>,
+                            <a href="#" class="tag-link">fiesta</a>,
+                            <a href="#" class="tag-link">mongrels</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /tags -->
+
             <!-- Reviews -->
             <div class="accordion shadow active">
                 <div class="title">
@@ -242,69 +323,348 @@
                 </div>
                 <div class="body clearfix">
                     
-                    <div class="w-1-2">
-                        
-                        <h4>Add your comment</h4>
-                        
-                        <div class="rating">
-                            <span>Rating: </span>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                            <i class="fa fa-star-o"></i>
+                    <div class="clearfix">
+                        <div class="w-1-2">
+                            
+                            <h4>Add your comment</h4>
+                            
+                            <div class="rating">
+                                <span>Rating: </span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            
+                            <!-- add-comment -->
+                            <form action="#" method="post" class="comments-form">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label for="form-name">Your name:</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="name" id="form-name" placeholder="your name">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="form-email">Your email:</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="email" id="form-email" placeholder="your email">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="form-comment">Comment:</label>
+                                        </td>
+                                        <td>
+                                            <textarea name="comment" id="form-comment" cols="30" rows="5" placeholder="comment"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" value="Add Review" class="button primary round">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <!-- /add-comment -->
                         </div>
-                        
-                        <!-- add-comment -->
-                        <form action="#" method="post" class="comments-form">
-                            <table>
+                        <div class="w-1-2">
+                            <h4>Product rating</h4>
+
+                            <div class="rating">
+                                <span class="number">4.5</span> Overall Rating
+                            </div>
+
+                            <table class="rating-detail">
                                 <tr>
                                     <td>
-                                        <label for="form-name">Your name:</label>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
                                     </td>
                                     <td>
-                                        <input type="text" name="name" id="form-name" placeholder="your name">
+                                        <div class="percentage">
+                                            <div class="line" style="width: 40%;"></div>
+                                        </div>
                                     </td>
+                                    <td class="active">01</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="form-email">Your email:</label>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
                                     </td>
                                     <td>
-                                        <input type="text" name="email" id="form-email" placeholder="your email">
+                                        <div class="percentage">
+                                            <div class="line" style="width: 60%;"></div>
+                                        </div>
                                     </td>
+                                    <td class="active">02</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="form-comment">Comment:</label>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
                                     </td>
                                     <td>
-                                        <textarea name="comment" id="form-comment" cols="30" rows="5" placeholder="comment"></textarea>
+                                        <div class="percentage">
+                                            <div class="line" style="width: 40%;"></div>
+                                        </div>
                                     </td>
+                                    <td class="active">01</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>
-                                        <input type="submit" value="Add Review" class="button primary round">
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
                                     </td>
+                                    <td>
+                                        <div class="percentage">
+                                            <div class="line" style="width: 0%;"></div>
+                                        </div>
+                                    </td>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="percentage">
+                                            <div class="line" style="width: 0%;"></div>
+                                        </div>
+                                    </td>
+                                    <td>00</td>
                                 </tr>
                             </table>
-                        </form>
-                        <!-- /add-comment -->
-
-                    </div>
-                    <div class="w-1-2">
-                        <h4>Product rating</h4>
-
-                        <div class="rating">
-                            
                         </div>
                     </div>
+
+                    <!-- comments -->
+                    <div class="comments">
+                        
+                        <!-- comment -->
+                        <div class="comment">
+                            <div class="photo">
+                                <img src="public/files/users/4.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <a href="#" class="author">Liza D'souza</a>
+                                <span class="time">10:45 AM</span>
+                                <span class="date">Feb 25, 2016</span>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos id fuga, saepe aspernatur eaque maiores reprehenderit.</p>
+                            </div>
+                        </div>
+                        <!-- /comment -->
+
+                        <!-- comment -->
+                        <div class="comment">
+                            <div class="photo">
+                                <img src="public/files/users/5.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <a href="#" class="author">Mark Denmann</a>
+                                <span class="time">10:45 AM</span>
+                                <span class="date">Feb 25, 2016</span>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus inventore placeat expedita saepe.</p>
+                            </div>
+                        </div>
+                        <!-- /comment -->
+
+                        <!-- comment -->
+                        <div class="comment">
+                            <div class="photo">
+                                <img src="public/files/users/6.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <a href="#" class="author">Micle Yui</a>
+                                <span class="time">10:45 AM</span>
+                                <span class="date">Feb 25, 2016</span>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimo!</p>
+                            </div>
+                        </div>
+                        <!-- /comment -->
+
+                    </div>
+                    <!-- /comments -->
                     
                 </div>
             </div>
             <!-- /Reviews -->
-    
+            
+            <!-- lead -->
+            <div class="content-announce">
+                <div class="title"><span class="highlight">Related</span> Products</div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium odio expedita deserunt incidunt.</p>
+                </div>
+            </div>
+            <!-- /lead -->
+
+            <!-- books -->
+            <div class="book-list clearfix">
+                <div class="w-1-3">
+                    <a href="#" class="book-item shadow">
+                        <div class="cover">
+                            <img src="public/files/books/1.jpg" alt="" width="260" height="300">
+                            <div class="lable green">New</div>
+                        </div>
+                        <div class="description">
+                            <div class="title">
+                                <h3>Put text here</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates officiis dolor vitae rem aspernatur, ut in magnam fugit nemo tempora ducimus iure possimus facere nobis, tenetur harum, tempore dicta laboriosam.
+                            </div>
+                        </div>
+                        <div class="info clearfix">
+                            <div class="author w-1-2">
+                                <i class="fa fa-user"></i>
+                                <span>by Dolmatov</span>
+                            </div>
+                            <div class="category w-1-2">
+                                <i class="fa fa-folder-o"></i>
+                                <span>Magazine</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="w-1-3">
+                    <a href="#" class="book-item shadow">
+                        <div class="cover">
+                            <img src="public/files/books/2.jpg" alt="" width="230" height="300">
+                            <div class="lable red">Sold</div>
+                        </div>
+                        <div class="description">
+                            <div class="title">
+                                <h3>Put text here</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet
+                            </div>                         
+                        </div>
+                        <div class="info clearfix">
+                            <div class="author w-1-2">
+                                <i class="fa fa-user"></i>
+                                <span>by Dolmatov</span>
+                            </div>
+                            <div class="category w-1-2">
+                                <i class="fa fa-folder-o"></i>
+                                <span>Magazine</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="w-1-3">
+                    <a href="#" class="book-item shadow">
+                        <div class="cover">
+                            <img src="public/files/books/3.jpg" alt="" width="260" height="300">
+                            <div class="lable yellow">Hot</div>
+                        </div>
+                        <div class="description">
+                            <div class="title">
+                                <h3>Put text here</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates officiis dolor vitae rem aspernatur, tenetur harum, tempore dicta laboriosam.
+                            </div>
+                            
+                        </div>
+                        <div class="info clearfix">
+                            <div class="author w-1-2">
+                                <i class="fa fa-user"></i>
+                                <span>by Dolmatov</span>
+                            </div>
+                            <div class="category w-1-2">
+                                <i class="fa fa-folder-o"></i>
+                                <span>Magazine</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- /books -->
         </main>  
     </div>
 
