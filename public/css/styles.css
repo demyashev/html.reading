@@ -178,6 +178,10 @@ form input[type="submit"]:hover {
     margin-bottom: 30px;
 }
 
+.content-announce.inversed .title {
+    color: #999;
+}
+
 .content-announce .title .highlight {
     color: #222;
     font-weight: 700;
@@ -185,6 +189,9 @@ form input[type="submit"]:hover {
     border-right: 2px solid #686868;
 }
 
+.content-announce.inversed .title .highlight {
+    color: #fff;
+}
 
 .content-announce .text {
     text-align: center;
@@ -195,6 +202,10 @@ form input[type="submit"]:hover {
     color: #686868;
     font-size: 14px;
     line-height: 26px;
+}
+
+.content-announce.inversed .text p {
+    color: #999;
 }
 
 .wrapper {
@@ -270,7 +281,8 @@ header {
     background: url('../img/logo.png');
 }
 
-.header.inversed .header-logo {
+.header.inversed .header-logo,
+.header-logo.inversed {
     background: url('../img/logo-inversed.png');
 }
 
@@ -1666,4 +1678,78 @@ footer .copyrights .counters a:first-child {
     color: #686868;
     font-size: 14px;
     line-height: 26px;
+}
+
+.coming-soon {
+    background: #fff;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.coming-soon .wrapper {
+    max-width: 770px;
+}
+
+.coming-soon .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: url('../img/coming-soon.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.coming-soon .gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+
+.counter {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.counter-item {
+    padding: 0 25px;
+}
+
+.counter-item .circle {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    color: #fff;
+    font-size: 60px;
+    line-height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 9px solid #262626;
+    margin-bottom: 20px;
+}
+
+.counter-item .circle.red {
+    background: #fe4157;
+}
+
+.counter-item .circle.purple {
+    background: #aa71d0;
+}
+
+.counter-item .circle.yellow {
+    background: #ffb400;
+}
+
+.counter-item .circle.green {
+    background: #42bab0;
+}
+
+.counter-item .description {
+    color: #fff;
+    font-size: 16px;
 }
