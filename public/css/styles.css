@@ -1716,9 +1716,7 @@ footer .copyrights .counters a:first-child {
     background: rgba(255, 255, 255, 0.05);
 }
 
-.counter-item {
-    padding: 0 25px;
-}
+.counter-item {}
 
 .counter-item .circle {
     display: inline-block;
