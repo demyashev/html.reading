@@ -149,15 +149,6 @@ form input[type="submit"]:hover {
     cursor: pointer;
 }
 
-ul li::before {
-    display: inline-block;
-    content: "";
-    width: 13px;
-    height: 11px;
-    margin-right: 20px;
-    background: url('../img/li.png') no-repeat;
-}
-
 .content-lead {
     margin-bottom: 25px;
     background: #212121;
@@ -1446,6 +1437,16 @@ footer .copyrights .counters a:first-child {
     color: #686868;
     line-height: 24px;
     margin-bottom: 25px;
+}
+
+
+.accordion .text ul > li::before {
+    display: inline-block;
+    content: "";
+    width: 13px;
+    height: 11px;
+    margin-right: 20px;
+    background: url('../img/li.png') no-repeat;
 }
 
 .accordion .text p:last-child,
