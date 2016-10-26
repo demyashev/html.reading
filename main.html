@@ -682,5 +682,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        r(function(){
+            tools.addListener('click', '.slider-toggle', slider.toggle);
+            slider.init('.slider-container', '.slider', '.slider-item', '.slider-bg');
+        });
+    </script>
 </body>
 </html>

@@ -166,11 +166,78 @@ var ui = (function(ui) {
     return ui;
 })({});
 
+var counter = (function(counter) {
+
+    counter.date = {
+        y : null,
+        mo : null,
+        d : null,
+        h : null,
+        mi : null,
+        s : null
+    }
+
+    counter.init = function(c_year, c_month, c_day, c_hour, c_minute, c_second) {
+
+        minute = 1000 * 60;
+        hour = minute * 60;
+        day = hour * 24;
+    
+        counter.date.y  = c_year;
+        counter.date.mo = c_month - 1;
+        counter.date.d  = c_day;
+        counter.date.h  = c_hour;
+        counter.date.mi = c_minute;
+        counter.date.s  = c_second;
+
+        html_day = tools.get('.counter-day');
+        html_hour = tools.get('.counter-hour');
+        html_minute = tools.get('.counter-minute');
+        html_second = tools.get('.counter-second');
+
+        setTimeout(function() {
+            setInterval(function() {
+                counter.swap();
+            }, 1000);
+        });
+    }
+
+    counter.swap = function() {
+
+        var now = new Date();
+        var date = new Date(
+            counter.date.y,
+            counter.date.mo, 
+            counter.date.d, 
+            counter.date.h, 
+            counter.date.mi, 
+            counter.date.s, 
+            0
+        );
+        
+        if (date.getTime() > now.getTime()) {
+            timeDiff = Math.abs( date.getTime() - now.getTime() );
+        } else {
+            timeDiff = Math.abs( now.getTime() - date.getTime() );
+        }
+
+        var d = Math.ceil(  timeDiff / day) - 1; 
+        var h = Math.ceil( (timeDiff - d * day) / hour ) - 1;
+        var m = Math.ceil( (timeDiff - d * day - h * hour) / minute) - 1;
+        var s = Math.ceil( (timeDiff - d * day - h * hour - m * minute) / 1000) - 1;
+
+        html_day.innerHTML = d;
+        html_hour.innerHTML = h;
+        html_minute.innerHTML = m;
+        html_second.innerHTML = s;
+    }
+
+    return counter;
+})({});
+
 r(function(){
 
     tools.addListener('click', '.submenu', ui.toggleActive); 
-    tools.addListener('click', '.accordion .title', ui.toggleActive); 
-    tools.addListener('click', '.slider-toggle', slider.toggle); 
     
     // console.log(tools.storageSupports());
     document.documentElement.className = 
@@ -180,7 +247,4 @@ r(function(){
         document.documentElement.className = 
             document.documentElement.classList.add('mobile');
     }
-
-    slider.init('.slider-container', '.slider', '.slider-item', '.slider-bg');
-
 });

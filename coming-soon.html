@@ -31,34 +31,34 @@
             <!-- /wrapper -->
 
             <!-- counter -->
-            <div class="counter">
+            <div class="counter clearfix">
 
                 <div class="wrapper">
 
                     <div class="w-1-4">
                         <div class="counter-item">
-                            <div class="circle red">26</div>
+                            <div class="circle red counter-day">0</div>
                             <div class="description">Days</div>
                         </div>
                     </div>
 
                     <div class="w-1-4">
                         <div class="counter-item">
-                            <div class="circle purple">26</div>
+                            <div class="circle purple counter-hour">0</div>
                             <div class="description">Hours</div>
                         </div>
                     </div>
 
                     <div class="w-1-4">
                         <div class="counter-item">
-                            <div class="circle yellow">53</div>
+                            <div class="circle yellow counter-minute">0</div>
                             <div class="description">Minutes</div>
                         </div>
                     </div>
 
                     <div class="w-1-4">
                         <div class="counter-item">
-                            <div class="circle green">40</div>
+                            <div class="circle green counter-second">0</div>
                             <div class="description">Seconds</div>
                         </div>
                     </div>
@@ -67,9 +67,31 @@
 
             </div>
             <!-- /counter -->
+
+            <div class="social">
+                <a href="#">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="footer">
+                &copy; Copyright 2016 by <a href="#">E-Reading</a> - All Rights Reserved.
+            </div>
             
         </div>
     </div>
   
+  <script>
+      counter.init(2016, 10, 26, 12, 33, 0);
+  </script>
 </body>
 </html>
