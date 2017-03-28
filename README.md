@@ -10,4 +10,4 @@ by Александр Демяшев
 * [ВКонтакте](https://vk.com/demyashev)
 
 ## Preview
-![BMBE preview](https://raw.githubusercontent.com/demyashev/reading/public/files/preview.png)
+![BMBE preview](https://raw.githubusercontent.com/demyashev/reading/master/public/files/preview.png)
