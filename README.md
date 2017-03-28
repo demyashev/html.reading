@@ -3,11 +3,11 @@ E-Reading
 
 Электронная библиотека c возможностью создания личной
 
-## Preview
-Актуальную версию сверстанного макета можно посмотреть по [ссылке](https://demyashev.com/p/e/)
-
 ## About
 by Александр Демяшев
 
 * work@demyashev.com
 * [ВКонтакте](https://vk.com/demyashev)
+
+## Preview
+![BMBE preview](https://raw.githubusercontent.com/demyashev/reading/public/files/preview.png)
